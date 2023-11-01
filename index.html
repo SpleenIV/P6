@@ -13,10 +13,10 @@
 </head>
 <body>
 	<div class="bando">
-		<a href="#">Mode édition</a>
+		<a><i class="fa-regular fa-pen-to-square"></i>Mode édition</a>
 	</div>
 <header>
-	<i class="fa-regular fa-pen-to-square"></i>
+	
 	<h1>Sophie Bluel <span>Architecte d'inteérieur</span></h1>
 	<nav>
 		<ul>
@@ -28,13 +28,53 @@
 	</nav>
 </header>
 <main>
-	<div class="backgroundmodal">
-		<div class="modal">
-			<div class="galleryModal">
+	
+	<div class="backgroundmodal"></div>
+		<div class="modalAddImg">
+			<i class="fa-solid fa-xmark"></i>
+			<i class="fa-solid fa-arrow-left"></i>
+			<h3>Ajout photo</h3>
+			<div class="btn-modal">
+				<form class="formAdd">
+					<div class="containerImg">
+						<i class="fa-regular fa-image"></i>
+						<div class="add-img-btn">
+							<p>+ Ajouter photo</p>
+						</div>
+
+						<p class="fill-accept">jpg, png : 4mo max</p>
+						<input type="file" class="photo" name="photo" accept="image/png, image/jpeg">
+						<output></output>
+
+					</div>
+					<label for="title">Titre</label>
+					<input type="text" class="title" name="title">
+					<label for="category">Catégorie</label>
+					<select class="category-choice" name="category">
+						<option value="null"></option>
+						<option value="objets">Objets</option>
+						<option value="appartements">Appartements</option>
+						<option value="hotels">Hôtels & restaurants</option>
+
+					</select>
+					<div class="error-formadd"></div>
+					<div class="line"></div>
+					<input type = "submit" name="upload" value = "Ajouter" class="validate">
+				</form>
 			</div>
 		</div>
-	</div>
-	
+
+		<div class="modal">
+			<i class="fa-solid fa-xmark lvl2"></i>
+			<h3>Galerie photo</h3>
+			<div class="galleryModal">
+			</div>
+			<div class="ligne"></div>
+			<div class="btnModal">
+				<button class="addModal">Ajouter une photo</button>
+			</div>
+		</div>
+
 	<section id="introduction">
 		<figure>
 			<img src="./assets/images/sophie-bluel.png" alt="">
@@ -50,16 +90,12 @@
 
 		<div class="modif">
 			<h2>Mes Projets</h2>
-			<i class="fa-regular fa-pen-to-square"></i>
-			<a href="galerie.html">Modifier</a>
+			<p class="open"><i class="fa-regular fa-pen-to-square"></i>Modifier</p>
 		</div>
 		
 
 		<div class="containerbtn">
-			<button class="btn">Tous</button>
-			<button class="btn">Objets</button>
-			<button class="btn">Appartements</button>
-			<button class="btn">Hôtels & restaurants</button>
+			
 		</div>
 
 
